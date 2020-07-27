@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CastTableViewCell" rowHeight="126" id="xcc-hZ-Zzv" customClass="CastTableViewCell" customModule="AppOfThrones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xcc-hZ-Zzv" id="gR5-F0-9PY">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sI4-6C-M2m">
+                        <rect key="frame" x="20" y="15" width="96" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="96" id="Drh-AO-7nG"/>
+                            <constraint firstAttribute="width" constant="96" id="YD1-QW-QqR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTf-PI-VA0">
+                        <rect key="frame" x="136" y="15" width="258" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="H1J-H0-hgq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdl-io-gXL">
+                        <rect key="frame" x="136" y="50" width="258" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iAl-hS-2eV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEf-3d-Q7s">
+                        <rect key="frame" x="136" y="90" width="258" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Cex-c9-fRj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-8X-VDw">
+                        <rect key="frame" x="376" y="54.5" width="18" height="18"/>
+                        <color key="tintColor" red="0.88500124219999998" green="0.683257699" blue="0.27436178919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="WLq-PX-iZa"/>
+                            <constraint firstAttribute="height" constant="20.5" id="mHF-hO-CEL"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atU-r0-TQI">
+                        <rect key="frame" x="357" y="0.0" width="57" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="VII-DC-SCn"/>
+                        </constraints>
+                        <connections>
+                            <action selector="favoriteAction" destination="xcc-hZ-Zzv" eventType="touchUpInside" id="Iex-ru-9Bu"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="atU-r0-TQI" secondAttribute="trailing" id="28f-Xk-fvj"/>
+                    <constraint firstItem="Vdl-io-gXL" firstAttribute="top" secondItem="ZTf-PI-VA0" secondAttribute="bottom" constant="3" id="CVK-R5-8Si"/>
+                    <constraint firstItem="GEf-3d-Q7s" firstAttribute="trailing" secondItem="gR5-F0-9PY" secondAttribute="trailingMargin" id="CmO-rX-EJE"/>
+                    <constraint firstItem="GEf-3d-Q7s" firstAttribute="leading" secondItem="sI4-6C-M2m" secondAttribute="trailing" constant="20" id="QDv-c6-4GS"/>
+                    <constraint firstItem="GEf-3d-Q7s" firstAttribute="top" secondItem="SSr-8X-VDw" secondAttribute="bottom" constant="16.5" id="RVG-Yh-PIj"/>
+                    <constraint firstItem="sI4-6C-M2m" firstAttribute="leading" secondItem="gR5-F0-9PY" secondAttribute="leading" constant="20" id="Rm4-35-K3r"/>
+                    <constraint firstAttribute="bottom" secondItem="atU-r0-TQI" secondAttribute="bottom" id="YG3-es-lxn"/>
+                    <constraint firstItem="ZTf-PI-VA0" firstAttribute="top" secondItem="gR5-F0-9PY" secondAttribute="top" constant="15" id="bL9-Pq-xhU"/>
+                    <constraint firstAttribute="trailing" secondItem="Vdl-io-gXL" secondAttribute="trailing" constant="20" id="bij-2Z-6Rc"/>
+                    <constraint firstItem="sI4-6C-M2m" firstAttribute="centerY" secondItem="gR5-F0-9PY" secondAttribute="centerY" id="ctg-KB-iYu"/>
+                    <constraint firstItem="atU-r0-TQI" firstAttribute="top" secondItem="gR5-F0-9PY" secondAttribute="top" id="eNG-qv-nnU"/>
+                    <constraint firstItem="SSr-8X-VDw" firstAttribute="trailing" secondItem="gR5-F0-9PY" secondAttribute="trailingMargin" id="eZK-rA-gPt"/>
+                    <constraint firstAttribute="trailing" secondItem="ZTf-PI-VA0" secondAttribute="trailing" constant="20" id="gfR-jc-TcW"/>
+                    <constraint firstItem="ZTf-PI-VA0" firstAttribute="leading" secondItem="sI4-6C-M2m" secondAttribute="trailing" constant="20" id="lyX-mJ-957"/>
+                    <constraint firstItem="Vdl-io-gXL" firstAttribute="leading" secondItem="sI4-6C-M2m" secondAttribute="trailing" constant="20" id="ojd-n5-kIu"/>
+                    <constraint firstItem="SSr-8X-VDw" firstAttribute="centerY" secondItem="gR5-F0-9PY" secondAttribute="centerY" id="ssz-F3-s2w"/>
+                    <constraint firstItem="SSr-8X-VDw" firstAttribute="centerY" secondItem="gR5-F0-9PY" secondAttribute="centerY" id="vUc-dm-jSI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <connections>
+                <outlet property="avatar" destination="sI4-6C-M2m" id="74j-mQ-aLN"/>
+                <outlet property="episodes" destination="GEf-3d-Q7s" id="n8f-3e-Gkt"/>
+                <outlet property="heart" destination="SSr-8X-VDw" id="VYB-bi-ChM"/>
+                <outlet property="name" destination="ZTf-PI-VA0" id="hoh-FO-iHz"/>
+                <outlet property="role" destination="Vdl-io-gXL" id="50y-Fj-R46"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="-16.741071428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModule="AppOfThrones" customModuleProvider="target">
+            <connections>
+                <outlet property="seasonSegmented" destination="57q-OL-LMd" id="2YM-xU-qfg"/>
+                <outlet property="table" destination="PBq-Uq-cw5" id="taP-HK-djb"/>
+                <outlet property="topConstraint" destination="pdu-iU-Sgd" id="Isu-cr-GWZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9AK-ao-92X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="57q-OL-LMd">
+                    <rect key="frame" x="20" y="62" width="374" height="32"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="IjZ-ZK-AP4"/>
+                    </constraints>
+                    <segments>
+                        <segment title="1"/>
+                        <segment title="2"/>
+                        <segment title="3"/>
+                        <segment title="4"/>
+                        <segment title="5"/>
+                        <segment title="6"/>
+                        <segment title="7"/>
+                        <segment title="8"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="segmentedChanged:" destination="-1" eventType="valueChanged" id="3D9-Sp-TXR"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-Uq-cw5">
+                    <rect key="frame" x="0.0" y="135" width="414" height="739"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EvT-m0-dQE"/>
+                        <outlet property="delegate" destination="-1" id="BFe-gv-QX6"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episodes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoA-f5-nVE">
+                    <rect key="frame" x="20" y="101" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="LWX-1C-4XC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PBq-Uq-cw5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6u6-6I-pBo"/>
+                <constraint firstItem="OoA-f5-nVE" firstAttribute="top" secondItem="57q-OL-LMd" secondAttribute="bottom" constant="8" id="GPH-Nq-97f"/>
+                <constraint firstItem="57q-OL-LMd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Laf-mI-mYn"/>
+                <constraint firstItem="PBq-Uq-cw5" firstAttribute="top" secondItem="OoA-f5-nVE" secondAttribute="bottom" constant="2" id="Q88-RR-JM9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="57q-OL-LMd" secondAttribute="trailing" constant="20" id="TCq-sN-xXy"/>
+                <constraint firstItem="OoA-f5-nVE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bqy-wg-gc6"/>
+                <constraint firstAttribute="bottom" secondItem="PBq-Uq-cw5" secondAttribute="bottom" constant="22" id="iPr-g3-RgJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OoA-f5-nVE" secondAttribute="trailing" constant="20" id="j7m-fT-fk5"/>
+                <constraint firstItem="PBq-Uq-cw5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nwL-xk-XuZ"/>
+                <constraint firstItem="57q-OL-LMd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="pdu-iU-Sgd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="10" y="0.0"/>
+        </view>
+    </objects>
+</document>
